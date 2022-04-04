@@ -1,5 +1,5 @@
 syntax = "proto3";
-
+package message;
 message Paste{
   string id = 1;
   int32 status =2;
