@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+message Paste{
+  string id = 1;
+  int32 status =2;
+  string content =3;
+  string lang=4;
+  bool password =5;
+  string error =6;
+  string message = 7;
+  string tokenEncryption = 8;
+}
+
+message newPaste{
+  string content = 1;
+  string lang = 2;
+  bool password = 3;
+  bool once = 4;
+  string tokenEncryption = 5;
+  string token = 6;
+  string xtoken = 7;
+  int32 timeline = 8;
+}
